@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
 
-// rota principal
+// rota para novo colaborador
 router.get('/', (req, res) => {
-    res.render('home', { title: 'Portal do Colaborador' });
+    res.render('novo-colaborador', { title: 'Novo Colaborador' });
 });
 
 module.exports = router;

@@ -1,0 +1,217 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    background: url(../img/capafundo.jpg);
+    background-size: cover;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+/* Header */
+.header {
+    background-color: #0f2652;
+    border-bottom: 1px solid #fafafa;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 80px;
+    width: auto;
+}
+
+.menu-text {
+    color: #fff;
+    margin-left: 15px;
+    font-size: 1.2rem;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.back-icon {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.back-icon img {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.back-icon img:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+
+.back-icon span {
+    color: white;
+}
+
+/* Main content */
+.title {
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.capa img {
+    width: 100vw;
+    height: 160px;
+}
+
+/* Portal opções box */
+.portal-options {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.portal-box {
+    border: 3px solid #5f80eb;
+    background-color: #5f80eb;
+    color: #fafafa;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.4s ease, transform 0.4s ease;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+a {
+    text-decoration: none;
+}
+
+.portal-box .icon img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.portal-box:hover {
+    background-color: #5f80eb;
+    border-radius: 47px;
+    animation: uniao 2s 
+}
+
+.portal-text {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Box vermelha */
+.old-portal {
+    background: #e74c3c;
+    border: 3px solid #e74c3c;
+}
+
+.old-portal:hover {
+    background-color: #c0392b;
+    border-radius: 47px;
+    animation: uniao 2s;
+}
+
+/* Footer */
+.footer {
+    background-color: #0f2652;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* ------------------------------ */
+
+@keyframes uniao {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* ------------------------------ */
+
+
+/* RESPONSIVIDADE */
+
+@media (min-width: 1128px) {
+    .portal-box {
+        width: 450px;
+        height: 450px;
+        transition: 1s;
+    }
+}
+
+@media (max-width: 1128px) {
+    .portal-box {
+        width: 350px;
+        height: 350px;
+        transition: 1s;
+    }
+}
+
+@media (max-width: 800px) {
+    .portal-options {
+        display: flex;
+        flex-direction: column;
+        animation: uniao 2s 
+    }
+
+    .portal-box {
+        width: 300px;
+        height: 300px;
+        transition: 1s;
+    }
+
+    .portal-text {
+        font-size: 1.2rem;
+    }
+}

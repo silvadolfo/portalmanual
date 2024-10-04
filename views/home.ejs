@@ -5,11 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> <%= title %> </title>
 
+    <!-- css -->
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/splash.home.css">
+    <!-- js -->
+    <script src="js/home.js"></script>
 </head>
 <body>
-    
-    
 
+    <!-- Splash Screen - TELA de CARREGAMENTO -->
+    <div id="splash-screen" class="splash-screen">
+        <div class="splash-content">
+            <img src="img/logobrancagsc.png" alt="Logo GrupoSC" class="splash-logo">
+            <p class="splash-text">Carregando...</p>
+        </div>
+    </div>
+
+    <!-- HEADER  -->
+    <header class="header">
+        <div class="logo-container">
+            <img src="img/logobrancagsc.png" alt="Logo GrupoSC" class="logo">
+        </div>
+        <nav class="navbar">
+            <a href="#" class="back-icon">
+                <span>Clique para voltar</span>
+                <img src="img/back.png" alt="Voltar">
+            </a>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+        <div class="title">
+            ESCOLHA
+        </div>
+        <div class="portal-options">
+            <a href="/novo-colaborador" class="portal-box new-portal">
+                <div class="icon">
+                    <img src="img/new.png" alt="Novo Colaborador">
+                </div>
+                <p class="portal-text">Sou um Novo Colaborador</p>
+            </a>
+            <a href="/veterano" class="portal-box old-portal">
+                <div class="icon">
+                    <img src="img/old.png" alt="Portal Colaborador">
+                </div>
+                <p class="portal-text">Colaborador Veterano</p>
+            </a>
+        </div>
+    </main>
+
+    
+    <!-- FOOTER -->
+    <div class="footer">
+        <p>&copy; 2024 Desenvolvido pelo Suporte TI - Regional Sudeste.</p>
+    </div>
 </body>
 </html>
