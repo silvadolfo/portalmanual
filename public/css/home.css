@@ -10,13 +10,19 @@
 
 body {
     font-family: 'Oswald', sans-serif;
-    background: url(../img/capafundo.jpg);
+    background: url(../img/capafundo.jpg) no-repeat center center fixed;
+    /* Responsivo, centralizado e fixo */
     background-size: cover;
+    /* A imagem vai se ajustar para cobrir a tela inteira */
     color: #333;
     display: flex;
     flex-direction: column;
     height: 100vh;
+    /* A página vai ocupar toda a altura da tela */
     justify-content: space-between;
+    margin: 0;
+    padding: 0;
+
 }
 
 /* Header */
