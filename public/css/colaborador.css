@@ -87,7 +87,8 @@ body {
 }
 
 .section {
-    background-color: #fafafae0; /* Transparência no fundo branco */
+    background-color: #fafafae0;
+    /* Transparência no fundo branco */
     padding: 20px;
     margin-bottom: 30px;
     border-radius: 15px;
@@ -110,7 +111,8 @@ body {
 .section ul li {
     margin-bottom: 10px;
     font-size: 1.2rem;
-    border-bottom: 1px solid #eaeaea; /* Linha separadora opcional */
+    border-bottom: 1px solid #eaeaea;
+    /* Linha separadora opcional */
 
 }
 
@@ -131,9 +133,12 @@ body {
     text-align: center;
     padding: 10px;
     font-size: 0.9rem;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
+    z-index: 1000;
+    /* Para garantir que o footer esteja no topo de outros elementos */
+
 }
 
 /* ---------------------------- */

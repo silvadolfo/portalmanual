@@ -130,7 +130,7 @@ a {
 .portal-box:hover {
     background-color: #5f80eb;
     border-radius: 47px;
-    animation: uniao 2s 
+    animation: uniao 2s
 }
 
 .portal-text {
@@ -157,9 +157,10 @@ a {
     text-align: center;
     padding: 10px;
     font-size: 0.9rem;
-    position: absolute;
-    bottom: 0;
     width: 100%;
+    position: relative;
+    margin-top: auto;
+
 }
 
 
@@ -169,9 +170,11 @@ a {
     0% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.05);
     }
+
     100% {
         transform: scale(1);
     }
@@ -202,7 +205,7 @@ a {
     .portal-options {
         display: flex;
         flex-direction: column;
-        animation: uniao 2s 
+        animation: uniao 2s
     }
 
     .portal-box {
